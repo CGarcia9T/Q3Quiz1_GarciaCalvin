@@ -39,10 +39,10 @@
         <div class="col card" id="card">
         	<div class="card-header">Logic Operators</div>
         	<div class="card-body">
-        		<p id="second_a"> Is both true and false?: ...</p>
-        		<p id="second_b"> Is one true?: ...</p>
+        		<p id="second_a"> True or False? (a <= b) && (a >= b): ...</p>
+        		<p id="second_b"> True or False? (a != b) || (a == b): ...</p>
         	</div>
-        	<button id="button" type="button" class="btn button" onclick="var a=7;var b=9;var first= (a<b) && (b>a);var second= (a==b) && (b!==a);document.getElementById('second_a').innerHTML = `Is both true and false: ${first}.`;document.getElementById('second_b').innerHTML = `Is one true?: ${second}.`">Show Answer</button>
+        	<button id="button" type="button" class="btn button" onclick="var a=7;var b=9;var first= (a <= b) && (a >= b);var second= (a != b) || (a == b);document.getElementById('second_a').innerHTML = `True or False? (a <= b) && (a >= b): ${first}.`;document.getElementById('second_b').innerHTML = `True or False? (a != b) || (a == b): ${second}.`">Show Answer</button>
         </div>
         </div>
         <button id="button" type="button" class="btn button" onclick="window.location.reload()">Refresh</button>
